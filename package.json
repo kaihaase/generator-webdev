@@ -1,7 +1,7 @@
 {
   "name": "generator-webdev",
   "version": "0.0.0",
-  "description": "Generator for webdevelop with assemble, bootstrap, jquery, sass & more",
+  "description": "Generator for webdevelopment with Assemble, jQuery, Boostrap, Sass/SCSS, Less, TypeScript and / or CoffeeScript.",
   "homepage": "https://www.pw-pro.de/webdev",
   "author": {
     "name": "Kai Haase",
@@ -13,7 +13,15 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "assemble",
+    "jquery",
+    "bootstrap",
+    "sass",
+    "scss",
+    "less",
+    "typescript",
+    "coffeescript"
   ],
   "dependencies": {
     "yeoman-generator": "^0.21.1",
