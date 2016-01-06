@@ -10,6 +10,10 @@ npm install -g yo
 npm install -g generator-webdev
 ```
 
+Important:
+Because of [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass) this generator requires you to have [Ruby](http://www.ruby-lang.org/en/downloads/), [Sass](http://sass-lang.com/tutorial.html), and [Compass](http://compass-style.org/install/) >=1.0.1 installed. If you're on OS X or Linux you probably already have Ruby installed; test with `ruby -v` in your terminal. When you've confirmed you have Ruby installed, run `gem update --system && gem install compass` to install Compass and Sass.
+
+
 Then generate your new project:
 
 ```bash
