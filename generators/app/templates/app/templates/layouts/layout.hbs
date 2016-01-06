@@ -1,0 +1,44 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="de"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="de"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="de"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="de">
+  <!--<![endif]-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="{{ keywords }}">
+    <meta name="author" content="<%= author %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {{>icons}}
+    <!-- build:css({app,.tmp}) /styles/main.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <!-- endbower -->
+    {{>styles}}
+    <!-- endbuild -->
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="site">
+      {{>header}}
+      <div id="content">
+        {{body}}
+      </div>
+      {{>footer}}
+    </div>
+    <!-- build:js({app,.tmp}) /scripts/script.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    {{>scripts}}
+    <!-- endbuild -->
+  </body>
+</html>
+
