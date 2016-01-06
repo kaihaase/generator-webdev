@@ -1,5 +1,5 @@
 # generator-webdev [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Generator for webdevelop with assemble, bootstrap, jquery &amp; more
+> Yeoman generator for webdevelopment with Assemble, jQuery, Boostrap, Sass/SCSS, Less, TypeScript and / or CoffeeScript.
 
 ## Installation
 
