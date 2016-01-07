@@ -3,10 +3,11 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-webdev using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io), [grunt-cli](https://github.com/gruntjs/grunt-cli) and generator-webdev using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
+npm install -g grunt-cli
 npm install -g generator-webdev
 ```
 
