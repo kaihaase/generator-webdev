@@ -1,6 +1,6 @@
 {
   "name": "generator-webdev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generator for webdevelopment with Assemble, jQuery, Boostrap, Sass/SCSS, Less, TypeScript and / or CoffeeScript.",
   "homepage": "https://www.pw-pro.de/webdev",
   "author": {
