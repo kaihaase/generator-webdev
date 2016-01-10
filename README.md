@@ -3,10 +3,37 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io), [grunt-cli](https://github.com/gruntjs/grunt-cli) and generator-webdev using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+### Node.js
+You need to pre-install [Node.js](https://nodejs.org/) (inclusive [npm](https://www.npmjs.com/))
+
+Check:
+```bash
+node --version
+npm --version
+```
+
+### git
+For some packages you have to install [git](https://git-scm.com/).
+
+Check:
+```bash
+git --version
+```
+
+### Compass
+Because of [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass) for Sass/SCSS, this generator requires [Ruby](http://www.ruby-lang.org/en/downloads/), [Sass](http://sass-lang.com/tutorial.html), and [Compass](http://compass-style.org/install/) >=1.0.1. If you use OS X or Linux you probably already have Ruby; test with `ruby -v` in your terminal. When you've confirmed you have Ruby installed, run `gem update --system && gem install compass` to install Compass and Sass - It may be necessary to do this as administrator (root).
+
+Check:
+```bash
+compass --version
+```
+
+### npm packages
+Installation of the npm packages [Yeoman](http://yeoman.io), [bower](http://bower.io/), [grunt-cli](https://github.com/gruntjs/grunt-cli) and generator-webdev using [npm](https://www.npmjs.com/):
 
 ```bash
 npm install -g yo
+npm install -g bower
 npm install -g grunt-cli
 npm install -g generator-webdev
 ```
@@ -14,17 +41,17 @@ npm install -g generator-webdev
 It may be necessary to do this as administrator (root) => ``` sudo npm install -g yo ... ```.
 
 
-Then generate your new project:
+## Initialize a new project
+
+If everything is installed properly, setting up a new projects is done very quickly.
+
+Generate your new project:
 
 ```bash
 mkdir new-project
 cd new-project
 yo webdev
 ```
-
-## Important
-
-Because of [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass) this generator requires you to have [Ruby](http://www.ruby-lang.org/en/downloads/), [Sass](http://sass-lang.com/tutorial.html), and [Compass](http://compass-style.org/install/) >=1.0.1 installed. If you're on OS X or Linux you probably already have Ruby installed; test with `ruby -v` in your terminal. When you've confirmed you have Ruby installed, run `gem update --system && gem install compass` to install Compass and Sass - It may be necessary to do this as administrator (root).
 
 ## Development
 
@@ -33,7 +60,9 @@ cd new-project
 grunt serve
 ```
 
-This will start a new local server on ``` http://localhost:9000 ```. The page in your browser automatically refresh when files are changed.
+This will start a new local server on ``` http://localhost:9000 ```. The page in your browser automatically refreshes when files are changed.
+
+You can stop the server with: <kbd>CTRL</kbd> + <kbd>C</kbd>
 
 ## Building
 
