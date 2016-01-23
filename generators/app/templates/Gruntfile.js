@@ -156,7 +156,10 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: true,
+          // open: true,
+          // This is important because otherwise it would open http://hostname:port
+          // and this doesn't work on Windows for 0.0.0.0
+          open: 'http://localhost:9000',
           base: [
             '.tmp',
             '<%= config.app %>'
@@ -351,7 +354,13 @@ module.exports = function (grunt) {
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
       options: {
-        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images'],
+        // Important for loading the script async
+        blockReplacements: {
+          js: function (block){
+            return '<script async src="' + block.dest + '"><\/script>';
+          }
+        }
       },
       html: ['<%= config.dist %>/**/*.html'],
       css: ['<%= config.dist %>/styles/**/*.css']
@@ -487,7 +496,7 @@ module.exports = function (grunt) {
         'compass:server',
         'copy:styles',
         'assemble',
-        'less:server',
+        'less:server'
       ],
       test: [
         'copy:coffee',

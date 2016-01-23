@@ -3,6 +3,11 @@
 
 ## Installation
 
+All following commands are executed in a terminal ( Linux / Mac OS X ) or in the PowerShell ( Windows ).
+
+If you use a Mac OS X for development, you have to install [Xcode via Mac App Store](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) first.
+You can check it with this command: ```gcc --version```.
+
 ### Node.js
 You need to pre-install [Node.js](https://nodejs.org/) (inclusive [npm](https://www.npmjs.com/))
 

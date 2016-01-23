@@ -14,12 +14,6 @@
     <meta name="author" content="<%= author %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     {{>icons}}
-    <!-- build:css({app,.tmp}) /styles/main.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <!-- endbower -->
-    {{>styles}}
-    <!-- endbuild -->
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -39,6 +33,11 @@
     <!-- endbower -->
     {{>scripts}}
     <!-- endbuild -->
+    <!-- build:css({app,.tmp}) /styles/main.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <!-- endbower -->
+    {{>styles}}
+    <!-- endbuild -->
   </body>
 </html>
-
